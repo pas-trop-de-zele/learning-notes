@@ -1,3 +1,13 @@
+## ResourceSlice CR
+- Vendor is responsible for creating `ResourceSlice` CRs. There are offical kubernetes attributes as well as vendor specific attributes
+	```
+	# k8s specific attributes
+	resource.kubernetes.io/numaNode
+
+	# vendor specific attributes
+	gpu.nvidia.com/architecture
+	```
+
 ## ResourceClaim CR
 - Instead of container specifying certain resource request, for non cpu/memory pod references a resource claim instead for devices request (i.e. gpu)
 	```
